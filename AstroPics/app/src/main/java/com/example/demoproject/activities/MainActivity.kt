@@ -48,7 +48,7 @@ class MainActivity : androidx.appcompat.app.AppCompatActivity() {
     lateinit var date: String
     lateinit var mediaType: String
     lateinit var img: Bitmap
-    var rawJson = "Link no longer available."
+    var rawJson = "Link no longer available. Visit  https://apod.nasa.gov/apod/archivepix.html  for older links."
 
     private lateinit var db: database
 
