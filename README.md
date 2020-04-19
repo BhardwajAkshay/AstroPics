@@ -15,3 +15,10 @@ Android application that uses NASA apod api to fetch astronomy image of the day.
  - use image as wallpaper
  
 ![Wallpaper](https://user-images.githubusercontent.com/30142553/79696546-ec583680-829a-11ea-8784-bc40d4070694.png)
+
+##
+Go to 'NASA open APIs'
+ - Generate API Key
+
+replace "KEY" with your key in 'api_key'
+ - res/values/api_key.xml
