@@ -21,4 +21,5 @@ Go to 'NASA open APIs'
  - Generate API Key
 
 replace "KEY" with your key in 'api_key'
- - res/values/api_key.xml
+ - res/values/key.xml
+ 
