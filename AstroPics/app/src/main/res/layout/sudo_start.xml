@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.MainActivity">
+
+    <ImageView
+            android:id="@+id/imageView"
+            android:contentDescription="Main Image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/content_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/title_layout_bg"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_light"
+                android:padding="32dp"
+                android:hint="Loading..."
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/setWallpaper"
+                android:src="@drawable/ic_wallpaper"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:elevation="0dp"
+                app:elevation="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent">
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:background="@android:color/black"/>
+
+        <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="320dp">
+
+        <TextView
+                android:id="@+id/tvExplanation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Loading..."
+                android:fontFamily="@font/ubuntu_light"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:textSize="18sp"/>
+
+        </ScrollView>
+
+        <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_light"
+                android:hint="by"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="2dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/background_dark"/>
+
+        <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ubuntu_light"
+                android:hint="dated"
+                android:paddingStart="32dp"
+                android:paddingEnd="32dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:paddingBottom="32dp"
+                android:textColor="@android:color/background_dark"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

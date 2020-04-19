@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:fontFamily="@font/ubuntu_light"
+            android:text="About The Application"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/ubuntu_light"
+            android:text="AstriPics is an Android based application which uses NASA's APOD api to fetch data. The api provides data in JSON format. Data contains an url to astronomical image/video, title of the image, the date is was uploaded on, author name, service version, media type, explanation about the image by the author, copyright details. Data on the api is updated daily. The idea is to give user a feed about the daily astronomical image/video uploade by photographers around the world. For those who like astronomical events or images."/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:fontFamily="@font/ubuntu_light"
+            android:layout_marginTop="8dp"
+            android:text="How To Use"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"/>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/ubuntu_light"
+            android:text="On the Top-Right corner of the Home page are the menu options\n\n
+1) Download Button\n
+2) Offline data Button\n
+3) Home Button\n
+4) About Button\n
+5) Media Button - check the JSON data in raw form\n\n
+On the bottom right corner besides the title is the button to set the current image as the mobile phone wallpaper" />
+</LinearLayout>
