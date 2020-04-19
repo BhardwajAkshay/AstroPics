@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="api_key">add your key here</string>
+    <string name="api_key">KEY</string>
 </resources>
